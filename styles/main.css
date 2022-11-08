@@ -1,0 +1,226 @@
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    margin:0;
+    padding:0;
+}
+h1, h2, h3, h4, p, a {font-family: 'Montserrat', sans-serif }
+a {font-weight:500;}
+
+/* Navigation menu */
+header {
+    background-color:white;
+    box-shadow: 0px 0px 10px gray;
+    position:sticky;
+    padding:1em 4em 1em 4em;
+    height:84px;
+}
+#logo {
+    display:flex;
+    flex-direction:row;
+    float:left;
+    color:black;
+    padding:0;
+    max-width:400px;
+    margin:1em;
+    justify-content:center;
+}
+#logo img {
+    display:flex;
+    background-color:gray;
+    margin-right:1em;
+}
+#logo h3 {
+    margin:1em;
+    font-weight:400;
+}
+
+
+nav ul {
+    list-style: none;
+}
+ul.navigation {
+    display:flex;
+    justify-content:flex-end;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-right:1em;
+    margin:1rem 0;
+}
+.navitem {
+    margin:auto 1em auto 1em;
+}
+.navitem a {
+    text-decoration: none;
+    color:black;
+}
+#nav_menu ul li:hover > a, .navitem li:focus > a {
+    color:cornflowerblue;
+    text-shadow:1px 1px 12px;
+}
+.navitem a.active {
+    text-decoration:underline;
+}
+#nav_menu ul li ul {
+    display:none;
+    position:absolute;
+    top:auto;
+    width:20%;
+}
+#nav_menu ul li:hover > ul, #nav_menu ul li:focus > ul {
+    display:block;
+    background-color: whitesmoke;
+    box-shadow:1px 1px 12px gray;
+    padding:0.5em;
+    max-width:10em;
+}
+#nav_menu > ul::after {
+    content: "";
+    display:block;
+    clear:both;
+}
+#nav_menu ul ul li {
+    margin:0.5em;
+}
+
+/* mobile menu */
+#mobile_menu {
+    display:none;
+}
+
+/* Body */
+body {
+    width:100%;
+    height:1000px;
+    margin:0;
+}
+
+/*Main*/
+main {
+    width:100vw;
+    
+
+}
+
+/* sections */
+section {display:flex}
+#homebanner {
+    width:100vw;
+    height:fit-content;
+    background-color:black;
+    background-image: url(../images/THE_SILHOUETTE_thumbnail.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: 50% 50%;
+}
+#bannertitle {
+    line-height: 2em;
+    padding:300px 150px;
+    color:white;
+}
+#bannertitle > h2 {
+    display:none
+}
+
+/*quotes*/
+
+#mainquotes {
+    margin:3em 15% 3em 15%;
+    justify-content:space-around;
+}
+/* articles */
+article {
+    display:flex;
+    box-sizing:border-box;
+    max-width:75vw;
+    margin: 2em auto 2em;
+    justify-content:space-around;
+}
+article div {
+    min-width:40%;
+}
+article h3 {
+    text-align:center;
+}
+.mainfilmsbox {
+    display:grid;
+    grid-template:
+    "filmtype"
+    "filmbox"
+    ;
+}
+.mainfilmsbox h3 {
+    grid-area:filmtype;
+}
+.filmbox {
+    grid-area:filmbox;
+    display:flex;
+    flex-direction: row;
+    column-gap: 1em;
+    background-color:gray;
+    min-height:10em;
+    justify-content:flex-start;
+    overflow-x:scroll;
+}
+.filmbox-img {
+    background-color:white;
+    margin:1em;
+    aspect-ratio: 1 / 1;
+}
+/* social media */
+#socialLinks {
+    justify-content:center;
+}
+.fa {
+    color:black;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   
+  .fa:hover {
+      opacity: 0.7;
+  }
+/*footer style*/
+
+footer {
+    clear:both;
+    font-size:80%;
+    text-align:center;
+    border-top: 1px solid black;
+    padding:0.33em 0.33em;
+    bottom:0;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    #nav_menu {
+        display:none;
+    }
+    #mobile_menu {
+        display:block;
+        float:right;
+    }
+    header {
+        position:fixed;
+        padding:0.5em 0;;
+        top:0;
+        left:0;
+        width:100%;
+    }
+    main {
+        margin-top:84px;
+    }
+}
+@media only screen and (max-width: 580px) {
+	header {
+        padding:0.2em 0.5em;
+    }
+}
