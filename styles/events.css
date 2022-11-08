@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding:0;
+}
+summary {
+    font-family: 'Montserrat', sans-serif;
+    font-size:2em;
+}
+main h1 {
+    font-size:3em;
+    text-align:center;
+    margin:0.5em auto;
+}
+main {
+    width:95vw;
+    max-width:1080px;
+    background-color:white;
+    margin: 0 auto 2em;
+}
+section.events {
+    width:95%;
+    margin:1em auto 0;
+}
+summary:hover, summary:focus {
+    cursor:pointer;
+    color:cornflowerblue;
+    text-shadow:1px 1px 12px;
+}
+article.event {
+    display:block;
+}
