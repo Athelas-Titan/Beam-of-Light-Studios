@@ -32,6 +32,7 @@ header {
     display:flex;
     background-color:gray;
     margin-right:1em;
+    border-radius: 50%;
 }
 #logo h3 {
     margin:1em;
@@ -242,7 +243,7 @@ section#featureFilms > article {
 
 section#featureFilms {
     display: block;
-    text-align:center;
+    text-align:left;
 }
 section#featureFilms h1 {
     font-size:300%;
