@@ -22,41 +22,45 @@
 </head>
 <body>
     <header>
-        <a href="../index.html">
+        <div class="nav-container">
             <div id="logo">
-                <img src="../images/Beamoflightlogo2.jpg" alt="Logo" width="50px" height="50px">
-                <h3>BEAM OF LIGHT STUDIOS</h3>
+                <img src="../images/Beamoflightlogo2.jpg" alt="Logo" width="50px" height="50px" usemap="#logomap">
+                <map name="logomap">
+                    <area shape="circle" coords="25, 25, 25" href="../index.html" alt="Logomap">
+                </map>
+                <h3><a href="../index.html">BEAM OF LIGHT STUDIOS</a></h3>
             </div>
-        </a>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+    
+                <ul class="navigation">
+                    <li class="navitem" id="navitem1"><a href="../index.html">HOME</a></li>
+                    <li class="navitem" id="navitem2"><a href="../films/index.html">FILMS</a>
+                        <ul>
+                            <li><a href="../films/feature/index.html">FEATURE FILMS</a></li>
+                            <li><a href="../films/short/index.html">SHORT FILMS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem3"><a href="../extras/index.html" class="active">EXTRAS</a>
+                        <ul>
+                            <li><a href="../extras/podcast/index.html">PODCAST</a></li>
+                            <li><a href="../extras/events/index.html">EVENTS</a></li>
+                            <li><a href="../extras/life/index.html">LIFE AT BOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem4"><a href="../merch/index.html">MERCH</a></li>
+                    <li class="navitem" id="navitem5"><a href="../about/index.html">ABOUT</a>
+                        <ul>
+                            <li><a href="../about/story/index.html">OUR STORY</a></li>
+                            <li><a href="../about/leadership/index.html">LEADERSHIP</a></li>
+                            <li><a href="../about/awards/index.html">AWARDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem6"><a href="../contact/index.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <ul class="navigation">
-                <li class="navitem" id="navitem1"><a href="../index.html">HOME</a></li>
-                <li class="navitem" id="navitem2"><a href="../films/index.html">FILMS</a>
-                    <ul>
-                        <li><a href="../films/feature/index.html">FEATURE FILMS</a></li>
-                        <li><a href="../films/short/index.html">SHORT FILMS</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem3"><a href="../extras/index.html" class="active">EXTRAS</a>
-                    <ul>
-                        <li><a href="../extras/podcast/index.html">PODCAST</a></li>
-                        <li><a href="../extras/events/index.html">EVENTS</a></li>
-                        <li><a href="../extras/life/index.html">LIFE AT BOL</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem4"><a href="../merch/index.html">MERCH</a></li>
-                <li class="navitem" id="navitem5"><a href="../about/index.html">ABOUT</a>
-                    <ul>
-                        <li><a href="../about/story/index.html">OUR STORY</a></li>
-                        <li><a href="../about/leadership/index.html">LEADERSHIP</a></li>
-                        <li><a href="../about/awards/index.html">AWARDS</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem6"><a href="../contact/index.html">CONTACT US</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
 

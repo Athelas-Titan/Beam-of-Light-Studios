@@ -22,46 +22,52 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <div id="logo">
-                <img src="images/Beamoflightlogo2.jpg" alt="Logo" width="50px" height="50px">
-                <h3>BEAM OF LIGHT STUDIOS</h3>
-            </div>
-        </a>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
+        <div class="nav-container">
+                <div id="logo">
+                    <img src="images/Beamoflightlogo2.jpg" alt="Logo" width="50px" height="50px" usemap="#logomap">
+                    <map name="logomap">
+                        <area shape="circle" coords="25, 25, 25" href="index.html" alt="Logomap">
+                    </map>
+                    <h3><a href="index.html">BEAM OF LIGHT STUDIOS</a></h3>
+                </div>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+    
+                <ul class="navigation">
+                    <li class="navitem" id="navitem1"><a href="index.html" class="active">HOME</a></li>
+                    <li class="navitem" id="navitem2"><a href="films/index.html">FILMS</a>
+                        <ul>
+                            <li><a href="films/feature/index.html">FEATURE FILMS</a></li>
+                            <li><a href="films/short/index.html">SHORT FILMS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem3"><a href="extras/index.html">EXTRAS</a>
+                        <ul>
+                            <li><a href="extras/podcast/index.html">PODCAST</a></li>
+                            <li><a href="extras/events/index.html">EVENTS</a></li>
+                            <li><a href="extras/life/index.html">LIFE AT BOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem4"><a href="merch/index.html">MERCH</a></li>
+                    <li class="navitem" id="navitem5"><a href="about/index.html">ABOUT</a>
+                        <ul>
+                            <li><a href="about/story/index.html">OUR STORY</a></li>
+                            <li><a href="about/leadership/index.html">LEADERSHIP</a></li>
+                            <li><a href="about/awards/index.html">AWARDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem6"><a href="contact/index.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <ul class="navigation">
-                <li class="navitem" id="navitem1"><a href="index.html" class="active">HOME</a></li>
-                <li class="navitem" id="navitem2"><a href="films/index.html">FILMS</a>
-                    <ul>
-                        <li><a href="films/feature/index.html">FEATURE FILMS</a></li>
-                        <li><a href="films/short/index.html">SHORT FILMS</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem3"><a href="extras.html">EXTRAS</a>
-                    <ul>
-                        <li><a href="extras/podcast/index.html">PODCAST</a></li>
-                        <li><a href="extras/events/index.html">EVENTS</a></li>
-                        <li><a href="extras/life/index.html">LIFE AT BOL</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem4"><a href="merch/index.html">MERCH</a></li>
-                <li class="navitem" id="navitem5"><a href="about/index.html">ABOUT</a>
-                    <ul>
-                        <li><a href="about/story/index.html">OUR STORY</a></li>
-                        <li><a href="about/leadership/index.html">LEADERSHIP</a></li>
-                        <li><a href="about/awards/index.html">AWARDS</a></li>
-                    </ul>
-                </li>
-                <li class="navitem" id="navitem6"><a href="contact/index.html">CONTACT US</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section id="homebanner">
-            <div id="bannertitle"><h2>Title of Most Recent Movie</h2></div>
+            <div id="bannertitle">
+                <h5>Vive La Lumière!</h5>
+            </div>
         </section>
         <section id="mainquotes">
             <div><h4>"..."</h4></div>
@@ -75,10 +81,10 @@
                 <h3>Feature Films</h3>
                 <div class="filmbox">
                     <div class="filmbox-img">
-                        <img src="../../images/MtPleasant_poster.jpg" alt="Mount Pleasant Poster" class="movie-poster">
+                        <img src="images/MtPleasant_poster.jpg" alt="Mount Pleasant Poster" class="movie-poster">
                     </div>
                     <div class="filmbox-img">
-                        b
+                        <img src="images/Sunglasses_poster.jpg" alt="Sunglasses poster">
                     </div>
                     <div class="filmbox-img">c</div>
                 </div>
