@@ -1,0 +1,47 @@
+main {
+    display:block;
+
+}
+form {
+    box-sizing: border-box;
+    margin:10px auto;
+    padding:5% 10%;
+    background-color:white;
+    width:100%;
+    max-width:940px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+}
+form label {
+    font-size:1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+form input {
+    display:block;
+    min-width:150px;
+    width:100%;
+    margin-bottom:1em;
+    height:2em;
+    font-size:1.4em;
+    padding-left:5px;
+    font-family:'Times New Roman', Times, serif;
+}
+textarea {
+    display:block;
+    font-family:'Times New Roman', Times, serif;
+    height:170px;
+    width:100%;
+    resize: vertical;
+    text-justify:unset;
+    font-size:1.4em;
+    padding-left:5px;
+}
+input#submitbutton {
+    font-family: 'Montserrat', sans-serif;
+    margin:2.5em auto 2.5em 0;
+    width:100px;
+    height:60px;
+    padding:12px 10px;
+    line-height:1.5em;
+}
+form label u {text-decoration:none;}

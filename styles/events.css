@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+h5 {font-size:unset;}
 summary {
     font-family: 'Montserrat', sans-serif;
     font-size:2em;
