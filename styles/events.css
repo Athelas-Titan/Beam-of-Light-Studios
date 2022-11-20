@@ -3,6 +3,7 @@
     padding:0;
 }
 h5 {font-size:unset;}
+
 summary {
     font-family: 'Montserrat', sans-serif;
     font-size:2em;
@@ -30,3 +31,4 @@ summary:hover, summary:focus {
 article.event {
     display:block;
 }
+article.event h3 {text-align:left;}
