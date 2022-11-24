@@ -7,12 +7,14 @@ html {
     padding:0;
 }
 h1, h2, h3, h4, p, a {font-family: 'Montserrat', sans-serif;}
+
+/* h1, h2, h3, h4, p, a {font-family:'Times New Roman', Times, serif; font-weight:bold;} */
 @font-face {
-    font-family: 'Tangerine-Regular';
-    src:url('/fonts/Tangerine-Regular.ttf')
+    font-family: Tangerine-Regular;
+    src:url(/fonts/Tangerine-Regular.ttf)
 }
 h5 {
-    font-family: 'Tangerine-Regular';
+    font-family: Tangerine-Regular;
     font-size:600%;
     
 }
@@ -83,6 +85,7 @@ ul.navigation {
 #nav_menu ul li:hover > a, .navitem li:focus > a {
     color:cornflowerblue;
     text-shadow:1px 1px 12px;
+    cursor: pointer;
 }
 .navitem a.active {
     text-decoration:underline;
@@ -99,6 +102,7 @@ ul.navigation {
     box-shadow:1px 1px 12px gray;
     padding:0.5em;
     max-width:10em;
+    z-index: 100;
 }
 #nav_menu > ul::after {
     content: "";
@@ -121,7 +125,6 @@ ul.navigation {
 /* Body */
 body {
     width:100%;
-    height:1000px;
     margin:0;
     position:relative;
     top:100px;
@@ -246,6 +249,8 @@ article h3 {
 /*footer style*/
 
 footer {
+    position:relative;
+    display:block;
     background-color:white;
     clear:both;
     font-size:80%;
@@ -253,6 +258,7 @@ footer {
     border-top: 1px solid black;
     padding:1em 1em;
     bottom:0;
+    z-index:1;
 }
 
 
