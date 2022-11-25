@@ -222,9 +222,17 @@ article img.movie-poster {
     width: 240px;
     height:360px;
 }
-article p.movie-summary {
-    text-align:left;
+article .movie-summary p {text-align:left;}
+article .movie-summary a {text-decoration:none;}
+article .movie-summary a p {
+    box-sizing:border-box;
+    width:100px;
+    margin-top:1em;
+    padding:0.6em 2em;
+    background-color: #222;
+    color:white;
 }
+article .movie-summary a p:hover, article .movie-summary a p:focus {background-color:#666;}
 
 
 
@@ -288,7 +296,7 @@ footer a {
     color:black;
 }
 
-
+/*  */
 
 @media only screen and (max-width: 1080px) {
     #nav_menu {
@@ -331,3 +339,62 @@ footer a {
         align-content:center;
     }
 }
+
+
+/* MOUNT PLEASANT PAGE */
+  #myVideo {
+    position: relative;
+    right: 0;
+    top: -100px;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .singleFilm {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  /* Single Movie grid style */
+  article.singlemoviegrid {
+    display:grid;
+    box-sizing:border-box;
+    background-color:white;
+    padding:1em;
+    grid-template-areas:
+    "poster title title"
+    "poster attributes summary"
+    "poster purchase summary"
+    "poster youtubewatch summary"
+    ;
+    grid-template-columns: 240px auto auto;
+    grid-template-rows: 20% 50% auto auto;
+    gap: 1em 1em;
+  }
+  article .movie-watch {grid-area:youtubewatch;}
+  .movie-watch a {text-decoration:none;}
+  .movie-watch a h4:hover, .movie-watch a h4:focus {background-color:rgb(160, 0, 0);}
+  .movie-watch a h4 {
+    box-sizing:border-box;
+    width:100%;
+    color:white;
+    background-color:rgb(201, 32, 32);
+    padding:1em 2em;
+  }
