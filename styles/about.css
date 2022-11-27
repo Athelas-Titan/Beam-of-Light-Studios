@@ -1,4 +1,4 @@
-header {z-index:99;}
+header {z-index: index 90;}
 /* Body Style */
 body #background-beam {
     background: conic-gradient(black 90deg, rgb(223, 223, 223) 180deg, black 270deg);
@@ -70,7 +70,23 @@ article#bioMikeHorbatiuk img {
     padding:1em;
     box-shadow:1px 1px 12px gray;
 }
-  
+  /* awards style */
+
+.award-wrapper {
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-around;
+        align-items:center;
+        max-width:90vw;
+        margin:4rem auto;
+}
+.award-wrapper a {width:25%}
+.award-wrapper a img {max-width:100%}
+
+
+
+
+
 @media only screen and (max-width: 580px) {
     section#aboutUs {
         padding:2em 1em;

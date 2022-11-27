@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../images//favicon.ico" type="image/x-icon">
     <title>Beam of Light Studios | Merchandise</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/shop.css">
     <link rel="stylesheet" href="../styles/slicknav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,7 @@
                         <ul>
                             <li><a href="../extras/podcast/index.html">PODCAST</a></li>
                             <li><a href="../extras/events/index.html">EVENTS</a></li>
-                            <li><a href="../extras/life/index.html">LIFE AT BOL</a></li>
+                            <li><a href="../extras/bts/demo.html">LIFE AT BOL</a></li>
                         </ul>
                     </li>
                     <li class="navitem" id="navitem4"><a href="../merch/index.html" class="active">MERCH</a></li>
@@ -57,16 +58,215 @@
                         </ul>
                     </li>
                     <li class="navitem" id="navitem6"><a href="../contact/index.html">CONTACT US</a></li>
+                    <li class="navitem" id="cart">
+                        <button id="cartBtn" class="toggle-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </li>
                 </ul>
+
             </nav>
         </div>
-
     </header>
+
+   <div id="myCart" class="cart-overlay">
+        <aside class="cart">
+          <button id="exitCart" class="cart-close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="persistcart-header">
+            <h3 class="text-slanted"><strong>Shopping Cart</strong></h3>
+          </div>
+          <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="hdr_item" scope="col">Item</th>
+                        <th id="hdr_qty" scope="col">Qty.</th>
+                        <th id="hdr_price" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="../images/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">MOUNT PLEASANT</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="../images/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">VIRAL</h3>
+                            <p class="itemsubtitle">Blu-Ray disc (pre-order)</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="../images/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">THE SILHOUETTE</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$14.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_beanie.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Beanie</h3>
+                            <p class="itemsubtitle">Sportsman Pom Pom Beanie</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$18.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_travelmug.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Travel Mug</h3>
+                            <p class="itemsubtitle">12oz. Stainless Steel</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$32.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_popsocket.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL PopSocket&#9415;</h3>
+                            <p class="itemsubtitle"></p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$13.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+          </div>
+
+          <div class="aside-footer">
+            <h3 class="cart-total text-slanted">Total : $117.97 </h3>
+            <a href="../shop/cart.html"><button class="cart-checkout btn">CHECKOUT</button></a>
+          </div>
+        </aside>
+    </div>
+ 
     <main>
+        <section id="merch-container">
+            <div class="card">
+                <img src="media/BOL_ballcap.png" alt="BOL Ball cap" style="width:100%">
+                <h1>Beam of Light Ball Cap</h1>
+                <p class="price">$22.00</p>
+                <p>A classic style made from garment washed cotton twill, and added features like a relaxed fit, curved visor, and adjustable closure.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_beanie.png" alt="BOL Beanie" style="width:100%">
+                <h1>Beam of Light Beanie</h1>
+                <p class="price">$18.00</p>
+                <p>The Sportsman Pom Pom Beanie is a great way to sport our colors. This fantastic beanie will keep your head cozy on those extra-cold days.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_flatbillhat.png" alt="BOL Flatbill hat" style="width:100%">
+                <h1>Beam of Light Flat-bill Hat</h1>
+                <p class="price">$25.00</p>
+                <p>This New Era 9FIFTY Flatbill hat has a modern, urban style. An adjustable closure ensures comfort for all-day protection.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_mug.png" alt="BOL Mug" style="width:100%">
+                <h1>Beam of Light <br>11oz. Mug</h1>
+                <p class="price">$28.00</p>
+                <p>A classic ceramic mug with a stylish design, perfectly suited for your morning coffee or late-night editing sessions.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_travelmug.png" alt="BOL Travel Mug" style="width:100%">
+                <h1>Beam of Light<br> 12oz. Travel Mug</h1>
+                <p class="price">$32.00</p>
+                <p>This Camelbak&#9415; travel mug is lightweight, durable, and will keep your drinks warm or cold for up to 12 hours.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_tumbler.png" alt="BOL Tumbler" style="width:100%">
+                <h1>Beam of Light 20oz. Tumbler</h1>
+                <p class="price">$38.00</p>
+                <p>This Himalayan stainless steel tumbler is strong and reliable, it's ready to use all year long for whatever you need!</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_popsocket.png" alt="BOL Popsocket" style="width:100%">
+                <h1>Beam of Light PopSocket&#9415;</h1>
+                <p class="price">$13.00</p>
+                <p>Attach this essential device to your phone for an easy kickstand or a sturdy grip while using your phone daily!</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="media/BOL_pen.png" alt="BOL Pen" style="width:100%">
+                <h1>Beam of Light Executive Pen</h1>
+                <p class="price">$8.00</p>
+                <p>This chrome-accented, quick-dry gel pen is equipped with an ink cartridge optimized for ultra-smooth writing.</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+        </section>
 
     </main>
     <footer>
         <p class="copyright">&copy; 2022 Beam of Light Studios. Website created by Alec Love.</p>
+        <a href="https://www.flaticon.com/free-icons/smart-cart" title="smart cart icons">Smart cart icons created by Freepik - Flaticon</a>
     </footer>
+
+
+<script type="text/javascript">
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("cartBtn").onclick = function() {displayCart()};
+document.getElementById("exitCart").onclick = function() {hideCart()};
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function displayCart() {
+    document.getElementById("myCart").classList.add("show");
+}
+function hideCart() {
+    document.getElementById("myCart").classList.remove("show");
+}
+</script>
 </body>
 </html>

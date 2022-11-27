@@ -14,12 +14,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../js/app.js"></script>
     <script src="../../js/jquery.slicknav.min.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
             $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
         });
+        
     </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 </head>
 <body>
     <header>
@@ -46,7 +50,7 @@
                         <ul>
                             <li><a href="../../extras/podcast/index.html">PODCAST</a></li>
                             <li><a href="../../extras/events/index.html" class="active">EVENTS</a></li>
-                            <li><a href="../../extras/life/index.html">LIFE AT BOL</a></li>
+                            <li><a href="../../extras/bts/demo.html">LIFE AT BOL</a></li>
                         </ul>
                     </li>
                     <li class="navitem" id="navitem4"><a href="../../merch/index.html">MERCH</a></li>
@@ -54,15 +58,139 @@
                         <ul>
                             <li><a href="../../about/story/index.html">OUR STORY</a></li>
                             <li><a href="../../about/leadership/index.html">LEADERSHIP</a></li>
-                            <li><a href="../../about/awards/index.html">AWARDS</a></li>
+                            <li><a href="../../about/bts/demo.html">AWARDS</a></li>
                         </ul>
                     </li>
                     <li class="navitem" id="navitem6"><a href="../../contact/index.html">CONTACT US</a></li>
+                    <li class="navitem" id="cart">
+                        <button id="cartBtn" class="toggle-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
 
-    </header>
+    </header>         	
+<!-- Shopping Cart -->
+    <div id="myCart" class="cart-overlay">
+       <aside class="cart">
+         <button id="exitCart" class="cart-close">
+           <i class="fa fa-times"></i>
+         </button>
+         <div class="persistcart-header">
+           <h3 class="text-slanted"><strong>Shopping Cart</strong></h3>
+         </div>
+         <div class="cart-items">
+           <table>
+               <thead>
+                   <tr>
+                       <th id="hdr_item" scope="col">Item</th>
+                        <th id="hdr_qty" scope="col">Qty.</th>
+                       <th id="hdr_price" scope="col">Price</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                           <h3 class="itemtitle">MOUNT PLEASANT</h3>
+                           <p class="itemsubtitle">Blu-Ray disc</p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$19.99</h2>
+                           <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                               <h3 class="itemtitle">VIRAL</h3>
+                           <p class="itemsubtitle">Blu-Ray disc (pre-order)</p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                           <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$19.99</h2>
+                          <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                      </td>
+                   </tr>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                           <h3 class="itemtitle">THE SILHOUETTE</h3>
+                           <p class="itemsubtitle">Blu-Ray disc</p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                           <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$14.99</h2>
+                           <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/BOL_beanie.png" alt="" width="64px">
+                           <h3 class="itemtitle">BOL Beanie</h3>
+                           <p class="itemsubtitle">Sportsman Pom Pom Beanie</p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                           <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$18.00</h2>
+                           <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/BOL_travelmug.png" alt="" width="64px">
+                           <h3 class="itemtitle">BOL Travel Mug</h3>
+                           <p class="itemsubtitle">12oz. Stainless Steel</p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                           <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$32.00</h2>
+                           <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td headers="hdr_item">
+                           <img src="/shop/media/BOL_popsocket.png" alt="" width="64px">
+                           <h3 class="itemtitle">BOL PopSocket&#9415;</h3>
+                           <p class="itemsubtitle"></p>
+                       </td>
+                       <td headers="hdr_qty">
+                           <label for="quantity"></label>
+                           <input type="number" id="quantity" min="1" max="10" value="1">
+                       </td>
+                       <td headers="hdr_price">
+                           <h2 class="item-price">$13.00</h2>
+                           <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                       </td>
+                   </tr>
+               </tbody>
+   
+           </table>
+       </div>
+       <div class="aside-footer">
+           <h3 class="cart-total text-slanted">Total : $117.97 </h3>
+           <a href="/shop/cart.html"><button class="cart-checkout btn">CHECKOUT</button></a>
+       </div>
+       </aside>
+   </div>
     <main>
         <h1>EVENTS</h1>
         <section class="events" id="2022events">
@@ -70,15 +198,20 @@
                 <summary>2022</summary>
                 <article class="event">
                     <h3>Monster Movie Competition by MAC TV Network</h3>
+                    <p>Free and open to the public!</p>
                     <h4>November 7th</h4>
                     <h5><a href="https://celebrationcinema.com/cinemas/Celebration-Cinema-Mt-Pleasant">Celebration! Cinema in Mt. Pleasant, MI</a></h5>
                     <p></p>
                 </article>
                 <article class="event">
-                    Event2
+                    <h3>Cyber Weekend Merch Sales - 40% off EVERYTHING!</h3>
+                    <h4>November 26th & 27th</h4>
+                    <h5><a href="../../merch/index.html">Go to Merchandise Store</a></h5>
                 </article>
                 <article class="event">
-                    Event3
+                    <h3>Cyber Monday VIRAL Sale - 70% off when Preordering VIRAL on Blu-ray!</h3>
+                    <h4>Monday, November 28th</h4>
+                    <h5><a href="../../films/feature/viral.html">Go to VIRAL details page</a></h5>
                 </article>
             </details>
         </section>
@@ -96,9 +229,71 @@
                 </article>
             </details>
         </section>
+
+        <section id="calendar">
+            <div class="month">
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>November<br><span style="font-size:18px">2022</span></li>
+                </ul>
+              </div>
+              
+              <ul class="weekdays">
+                <li>Su</li>
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+
+              </ul>
+              
+              <ul class="days">
+                <li class="previous-month">30</li>
+                <li class="previous-month">31</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li><span class="active">26</span></li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+              </ul> 
+        </section>
+        <figure id="qrCode">
+            <img src="media/My_Coupon.png" alt="" width="300px">
+            <figcaption><p>Scan this code for a 10% discount on all items!<br><em>Offer ends January 2nd, 2023.</em></p></figcaption>
+        </figure>
     </main>
     <footer>
         <p class="copyright">&copy; 2022 Beam of Light Studios. Website created by Alec Love.</p>
     </footer>
+    <script src="/js/app.js"></script>
 </body>
 </html>

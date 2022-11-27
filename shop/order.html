@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images//favicon.ico" type="image/x-icon">
+    <title>Beam of Light Studios | Shopping Cart</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div id="logo">
+                <img src="../images/Beamoflightlogo2.jpg" alt="Logo" width="50px" height="50px" usemap="#logomap">
+                <map name="logomap">
+                    <area shape="circle" coords="25, 25, 25" href="../index.html" alt="Logomap">
+                </map>
+                <h3><a href="../index.html">BEAM OF LIGHT STUDIOS</a></h3>
+            </div>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+    
+                <ul class="navigation">
+                    <li class="navitem" id="navitem1"><a href="../index.html">HOME</a></li>
+                    <li class="navitem" id="navitem2"><a>FILMS</a>
+                        <ul>
+                            <li><a href="../films/feature/index.html">FEATURE FILMS</a></li>
+                            <li><a href="../films/short/index.html">SHORT FILMS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem3"><a>EXTRAS</a>
+                        <ul>
+                            <li><a href="../extras/podcast/index.html">PODCAST</a></li>
+                            <li><a href="../extras/events/index.html">EVENTS</a></li>
+                            <li><a href="../extras/bts/demo.html">LIFE AT BOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem4"><a href="../merch/index.html">MERCH</a></li>
+                    <li class="navitem" id="navitem5"><a>ABOUT</a>
+                        <ul>
+                            <li><a href="../about/story/index.html">OUR STORY</a></li>
+                            <li><a href="../about/leadership/index.html">LEADERSHIP</a></li>
+                            <li><a href="../about/awards/index.html">AWARDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navitem" id="navitem6"><a href="../contact/index.html">CONTACT US</a></li>
+					<li class="navitem" id="cart">
+                        <button id="cartBtn" class="toggle-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+	<!-- Shopping Cart -->
+	<div id="myCart" class="cart-overlay">
+        <aside class="cart">
+          <button id="exitCart" class="cart-close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="persistcart-header">
+            <h3 class="text-slanted"><strong>Shopping Cart</strong></h3>
+          </div>
+          <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="hdr_item" scope="col">Item</th>
+                        <th id="hdr_qty" scope="col">Qty.</th>
+                        <th id="hdr_price" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">MOUNT PLEASANT</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">VIRAL</h3>
+                            <p class="itemsubtitle">Blu-Ray disc (pre-order)</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">THE SILHOUETTE</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$14.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_beanie.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Beanie</h3>
+                            <p class="itemsubtitle">Sportsman Pom Pom Beanie</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$18.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_travelmug.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Travel Mug</h3>
+                            <p class="itemsubtitle">12oz. Stainless Steel</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$32.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="media/BOL_popsocket.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL PopSocket&#9415;</h3>
+                            <p class="itemsubtitle"></p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$13.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+          </div>
+
+          <div class="aside-footer">
+            <h3 class="cart-total text-slanted">Total : $117.97 </h3>
+            <a href="cart.html"><button class="cart-checkout btn">CHECKOUT</button></a>
+          </div>
+        </aside>
+    </div>
+    <main>
+		<div class="invoice">
+			<div class="invoice-container">
+				<div class="inv-title">
+					<h1>Invoice # 424773</h1>
+				</div>
+				<img src="" class="inv-logo">
+				<div class="inv-header">
+					<div>
+						<h2>Beam of Light Studios</h2>
+						<ul>
+							<li>Mt. Pleasant, MI 48801</li>
+							<li>United States</li>
+							<li>888-867-5309 | beamoflightstudios@gmail.com</li>
+						</ul>
+					</div>
+					<div>
+						<table>
+							<tr>
+								<th>Date Issued</th>
+								<td>11-26-2022</td>
+							</tr>
+							<tr>
+								<th>Due Date</th>
+								<td>11-26-2022</td>
+							</tr>
+							<tr>
+								<th>Amount Due</th>
+								<td>$125.05</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="inv-body">
+					<table>
+						<thead>
+							<th>Product</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<h3>MOUNT PLEASANT</h3>
+                                	<p>Blu-Ray disc</p>
+								</td>
+								<td>1</td>
+								<td>$19.99</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>VIRAL</h3>
+									<p>Blu-Ray disc (pre-order)</p>
+								</td>
+								<td>1</td>
+								<td>$19.99</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>THE SILHOUETTE</h3>
+									<p>Blu-Ray disc</p>
+								</td>
+								<td>1</td>
+								<td>$14.99</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>BOL Beanie</h3>
+									<p>Sportsman Pom Pom Beanie</p>
+								</td>
+								<td>1</td>
+								<td>$18.00</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>BOL Travel Mug</h3>
+									<p>12oz. Stainless Steel</p>
+								</td>
+								<td>1</td>
+								<td>$32.00</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>BOL PopSocket&#9415;</h3>
+									<p></p>
+								</td>
+								<td>1</td>
+								<td>$13.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="inv-footer">
+					<div><!-- required --></div>
+					<div>
+						<table>
+							<tr>
+								<th>Sub total</th>
+								<td>$117.97</td>
+							</tr>
+							<tr>
+								<th>Sales tax</th>
+								<td>$7.08</td>
+							</tr>
+							<tr>
+								<th>Grand total</th>
+								<td>$125.05</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="return"><a href="cart.html">Return to Cart</a></div>
+				<div class="return"><a href="../index.html">Return to Home</a></div>
+			</div>
+		</div>
+
+    </main>
+    <footer>
+        <p class="copyright">&copy; 2022 Beam of Light Studios. Website created by Alec Love.</p>
+    </footer>
+	<script src = '../js/app.js'></script>
+</body>
+</html>
