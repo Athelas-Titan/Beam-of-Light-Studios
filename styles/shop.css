@@ -1,0 +1,311 @@
+main {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .cart-container{
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    font-family: 'Montserrat', sans-serif;
+    padding:3em;
+    margin:2em
+   }
+   .cart-header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .cart-header-title{
+    font-size: 20px;
+    
+    font-weight: 700;
+    color: #2F3841;
+   }
+   .action{
+    font-size: 14px;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+   }
+   /* Table Style */
+   .cart-container table {
+    margin: 1em auto;
+    width:90%;
+    max-width:none;
+}
+
+/* Hiding the table borders */
+   /* .cart-container table, 
+   .cart-container table th, 
+   .cart-container table td {
+    border:1px solid black;
+    border-collapse: collapse;
+   } */
+   tr.cart-item {
+    display:table-row;
+    margin:auto;
+    width: 80%;
+    height: 30%;
+   }
+   .item-imgbox, #hdr_img {
+    width:70px;
+   }
+   .aboutitem, #hdr_item {
+    width:50%;
+    height:100%;
+   }
+   .itemtitle {
+    padding-top: 5px;
+    font-size:1.5em;
+    font-weight: 100;
+    color: #202020;
+    }
+    .itemsubtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color:#909090;
+    }
+    .item-price {
+        font-family:Georgia, Times, 'Times New Roman', serif;
+        text-align: right;
+    }
+    .item-actions, #hdr_price {
+        height:100%;
+        text-align: right;
+    }
+    .amountUSD {
+        padding-top: 20px;
+        font-size:26px;
+        font-family:Georgia, Times, 'Times New Roman', serif;
+        font-weight:800;
+        color:#202020;
+    }
+    .saveitem {
+        padding-top:5px;
+        font-size: 14px;
+        color:#1687d9;
+        cursor:pointer;
+    }
+    .removeitem {
+        padding-top:5px;
+        font-size: 14px;
+        color:#e44c4c;
+        cursor:pointer;
+    }
+.promo-code {
+    float: left;
+    margin: 10px 0 0 5%;
+    width: 28%;
+}
+.promo-code input {
+    padding: 5px 10px;
+    margin:1em 10px 0 10px;
+}
+.checkout{
+ float: right;
+ margin: 10px 5% 0 0;
+ width: 28%;
+}
+.checkout-total{
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: column;
+}
+.checkout-subtotal h3 {
+ font-size: 22px;
+ font-weight: 700;
+ color: #202020;
+}
+.checkout-quantity{
+ font-size: 16px;
+ font-weight: 500;
+ color: #909090;
+ line-height: 10px;
+}
+.total-amountUSD strong{
+ font-size: 36px;
+ font-weight: 900;
+ color: #202020;
+ float:right;
+}
+.checkoutbutton{
+ margin-top: 5px;
+ width: 100%;
+ height: 40px;
+ border: none;
+ background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: 600;
+ color: #202020;
+}
+
+
+
+
+
+
+/* 
+=======================
+invoice style
+=======================
+*/
+@media print {
+    @page {
+        size: A3;
+    }
+}
+.invoice {background-color: white;}
+ul {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    list-style: none;
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.invoice table,
+.invoice table th,
+.invoice table td {
+    border: 1px solid silver;
+}
+.invoice table th,
+.invoice table td {
+    text-align: right;
+    padding: 8px;
+}
+.invoice h1,
+.invoice h4,
+.invoice p {
+    margin: 0;
+}
+
+.invoice-container {
+    font-family: "Inter", sans-serif;
+    padding: 20px 0;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.inv-title {
+    padding: 10px;
+    border: 1px solid silver;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inv-logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* header */
+.inv-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+.inv-header > :nth-child(1) {
+    flex: 2;
+}
+.inv-header > :nth-child(2) {
+    flex: 1;
+}
+.inv-header h2 {
+    font-size: 20px;
+    margin: 0 0 0.3rem 0;
+}
+.inv-header ul li {
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+/* body */
+.inv-body table th,
+.inv-body table td {
+    text-align: left;
+}
+.inv-body {
+    margin-bottom: 30px;
+}
+/* Section Flexbox */
+section#merch-container {
+    display:flex;
+    flex-wrap:wrap;
+}
+/* 
+==============================
+Product Cards
+===========================
+*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding:2em;
+    border-radius:10px;
+  }
+  .card img {
+    max-height:300px;
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+/* footer */
+.inv-footer {
+    display: flex;
+    flex-direction: row;
+}
+.inv-footer > :nth-child(1) {
+    flex: 2;
+}
+.inv-footer > :nth-child(2) {
+    flex: 1;
+}
+
+.return {
+    margin-top:15px;
+    text-align:right;
+}
+
+@media only screen and (max-width:720px) {
+    body {font-size:80%;}
+}
