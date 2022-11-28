@@ -45,7 +45,7 @@
                         <ul>
                             <li><a href="extras/podcast/index.html">PODCAST</a></li>
                             <li><a href="extras/events/index.html">EVENTS</a></li>
-                            <li><a href="extras/life/index.html">LIFE AT BOL</a></li>
+                            <li><a href="extras/bts/demo.html">LIFE AT BOL</a></li>
                         </ul>
                     </li>
                     <li class="navitem" id="navitem4"><a href="merch/index.html">MERCH</a></li>
@@ -57,12 +57,136 @@
                         </ul>
                     </li>
                     <li class="navitem" id="navitem6"><a href="contact/index.html">CONTACT US</a></li>
+                    <li class="navitem" id="cart">
+                        <button id="cartBtn" class="toggle-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
 
     </header>
+	<!-- Shopping Cart -->
+	<div id="myCart" class="cart-overlay">
+        <aside class="cart">
+          <button id="exitCart" class="cart-close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="persistcart-header">
+            <h3 class="text-slanted"><strong>Shopping Cart</strong></h3>
+          </div>
+          <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="hdr_item" scope="col">Item</th>
+                        <th id="hdr_qty" scope="col">Qty.</th>
+                        <th id="hdr_price" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">MOUNT PLEASANT</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">VIRAL</h3>
+                            <p class="itemsubtitle">Blu-Ray disc (pre-order)</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$19.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/blu-ray-logo.png" alt="" width="64px">
+                            <h3 class="itemtitle">THE SILHOUETTE</h3>
+                            <p class="itemsubtitle">Blu-Ray disc</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$14.99</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/BOL_beanie.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Beanie</h3>
+                            <p class="itemsubtitle">Sportsman Pom Pom Beanie</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$18.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/BOL_travelmug.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL Travel Mug</h3>
+                            <p class="itemsubtitle">12oz. Stainless Steel</p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$32.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_item">
+                            <img src="/shop/media/BOL_popsocket.png" alt="" width="64px">
+                            <h3 class="itemtitle">BOL PopSocket&#9415;</h3>
+                            <p class="itemsubtitle"></p>
+                        </td>
+                        <td headers="hdr_qty">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" max="10" value="1">
+                        </td>
+                        <td headers="hdr_price">
+                            <h2 class="item-price">$13.00</h2>
+                            <div class="removeitem" style="float:right;cursor:pointer;"><u>Remove</u></div>
+                        </td>
+                    </tr>
+                </tbody>
 
+            </table>
+          </div>
+
+          <div class="aside-footer">
+            <h3 class="cart-total text-slanted">Total : $117.97 </h3>
+            <a href="/shop/cart.html"><button class="cart-checkout btn">CHECKOUT</button></a>
+          </div>
+        </aside>
+    </div>
     <main>
         <section id="homebanner">
             <div id="bannertitle">
@@ -86,35 +210,35 @@
             <div class="mainfilmsbox">
                 <h3>Feature Films</h3>
                 <div class="filmbox">
-                    <div class="filmbox-img">
+                    <div class="filmbox-img"><a href="films/feature/mountpleasant.html">
                         <img src="images/MtPleasant_poster.jpg" alt="Mount Pleasant Poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/feature/sunglasses.html">
                         <img src="images/Sunglasses_poster.jpg" alt="Sunglasses poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/feature/viral.html">
                         <img src="images/VIRALposterA2.jpg" alt="VIRAL poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
-                        <img src="images/LUCIDposterA2.jpg" alt="VIRAL poster" class="movie-poster">
-                    </div>
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/feature/lucid.html">
+                        <img src="images/LUCIDposterA2.jpg" alt="LUCID poster" class="movie-poster">
+                    </a></div>
                 </div>
             </div>
             <div class="mainfilmsbox">
                 <h3>Short Films</h3>
                 <div class="filmbox">
-                    <div class="filmbox-img">
+                    <div class="filmbox-img"><a href="films/short/thesilhouette.html">
                         <img src="images/THE_SILHOUETTE_poster.jpg" alt="The Silhouette poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/short/the_man_with_an_axe.html">
                         <img src="images/ManWithAXEposterMH.jpg" alt="The Man With an Axe poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/short/brokenhearts.html">
                         <img src="images/BROKEN_HEARTS_poster.jpg" alt="The Man With an Axe poster" class="movie-poster">
-                    </div>
-                    <div class="filmbox-img">
+                    </a></div>
+                    <div class="filmbox-img"><a href="films/short/redactedpark.html">
                         <img src="images/REDACTED_PARK_poster.jpg" alt="The Man With an Axe poster" class="movie-poster">
-                    </div>
+                    </a></div>
                 </div>
             </div>
         </article>
@@ -130,5 +254,6 @@
     <footer>
         <p class="copyright">&copy; 2022 Beam of Light Studios. Website created by Alec Love.</p>
     </footer>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
