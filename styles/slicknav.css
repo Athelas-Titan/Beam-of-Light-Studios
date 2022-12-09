@@ -107,8 +107,10 @@
 	font-size: 0.875em;
 }
 .slicknav_nav, .slicknav_nav ul {
+	position:relative;
 	list-style: none;
 	overflow: hidden;
+	z-index:998;
 }
 .slicknav_nav ul {
 	padding: 0;

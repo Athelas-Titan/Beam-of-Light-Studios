@@ -140,9 +140,12 @@ main {
  color: #202020;
  float:right;
 }
-.checkoutbutton{
- margin-top: 5px;
+.checkoutbutton, input#print {
+ display:block;
+ margin-left:auto;
+ margin-top: 1em;
  width: 100%;
+ max-width:150px;
  height: 40px;
  border: none;
  background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
@@ -256,10 +259,12 @@ Product Cards
 ===========================
 */
 .card {
+    box-sizing:border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #FFF;
-    max-width: 300px;
-    margin: auto;
+    max-width: 320px;
+    min-height:500px;
+    margin: 1% auto;
     text-align: center;
     font-family: arial;
     padding:2em;
@@ -272,9 +277,10 @@ Product Cards
     color: grey;
     font-size: 22px;
   }
-  
   .card button {
     border: none;
+
+    margin-top:auto;
     outline: 0;
     padding: 12px;
     color: white;
@@ -285,7 +291,7 @@ Product Cards
     font-size: 18px;
   }
   
-  .card button:hover {
+  .card button:hover, .card button:focus {
     opacity: 0.7;
   }
   
@@ -300,7 +306,6 @@ Product Cards
 .inv-footer > :nth-child(2) {
     flex: 1;
 }
-
 .return {
     margin-top:15px;
     text-align:right;
@@ -308,4 +313,5 @@ Product Cards
 
 @media only screen and (max-width:720px) {
     body {font-size:80%;}
+    .card {min-height:unset;}
 }

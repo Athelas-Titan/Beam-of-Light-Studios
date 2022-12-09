@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/jquery.slicknav.min.js"></script>
+    <script src="../js/print.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
@@ -208,11 +209,21 @@
 						<table>
 							<tr>
 								<th>Date Issued</th>
-								<td>11-26-2022</td>
+								<td>
+                                    <script type="text/javascript">
+                                        var today = new Date() ;
+                                        document.write( today.toLocaleDateString() );
+                                    </script>
+                                </td>
 							</tr>
 							<tr>
 								<th>Due Date</th>
-								<td>11-26-2022</td>
+								<td>
+                                    <script type="text/javascript">
+                                        var today = new Date() ;
+                                        document.write( today.toLocaleDateString() );
+                                    </script>
+                                </td>
 							</tr>
 							<tr>
 								<th>Amount Due</th>
@@ -299,6 +310,7 @@
 						</table>
 					</div>
 				</div>
+                <input type="button" id="print" value="Print this Page">
 				<div class="return"><a href="cart.html">Return to Cart</a></div>
 				<div class="return"><a href="../index.html">Return to Home</a></div>
 			</div>

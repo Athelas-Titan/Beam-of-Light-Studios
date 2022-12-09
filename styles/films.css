@@ -436,7 +436,7 @@ p#movie-year {color:rgb(105, 105, 105); margin-top:0.5em;}
 
 article img.movie-poster {
     width: 240px;
-    height:360px;
+    height: 360px;
 }
 article .movie-summary p {text-align:left;}
 article .movie-summary a {text-decoration:none;}
@@ -562,16 +562,16 @@ footer a {
     position: relative;
     right: 0;
     top: -100px;
-    min-width: 100%; 
+    width: 100%; 
     min-height: 100%;
   }
   
   .singleFilm {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 20px;
+    margin-top:-25vh;
   }
   
   #myBtn {

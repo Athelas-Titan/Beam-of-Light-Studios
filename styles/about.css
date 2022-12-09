@@ -1,4 +1,4 @@
-header {z-index: index 90;}
+header {z-index:90;}
 /* Body Style */
 body #background-beam {
     background: conic-gradient(black 90deg, rgb(223, 223, 223) 180deg, black 270deg);
@@ -30,9 +30,9 @@ section#aboutUs {
     box-sizing:border-box;
     width:100%;
     margin: 30px auto 2em auto;
-    justify-content:space-around;
     background-color:white;
     padding:3em;
+    z-index:1;
 }
 /* Article styles */
 article.lead-bio {
@@ -52,10 +52,8 @@ article#bioMikeHorbatiuk img {
 
 /*Summary styles*/
 .biotext details summary {
-
     font-family:'Montserrat', sans-serif;
     margin-top:0.5em;
-
 }
 .biotext details summary:hover, .biotext details summary:focus {
     cursor:pointer; 
